@@ -26,14 +26,14 @@
                 <legend>
                     <h2>Contact Information</h2>
                 </legend>
-                <div class="contact-wrapper">
-                    <label for="name">Full Name</label><input type="text" name="user_name" id="name" placeholder="Required" required>
-                    <label for="email">Email Address</label><input type="email" name="user_email" id="email" placeholder="Required" required>
-                    <label for="phone">Phone Number</label><input type="text" name="user_phone" id="phone" placeholder="Optional">
-                    <label for="address">Street Address</label><input type="text" name="user_address" id="address">
-                    <label for="city">City</label><input type="text" name="user_city" id="city">
+                <div class="contact-wrapper no-outline">
+                    <label for="name">Full Name</label><input class="shadow" type="text" name="user_name" id="name" placeholder="Required" required>
+                    <label for="email">Email Address</label><input class="shadow" type="email" name="user_email" id="email" placeholder="Required" required>
+                    <label for="phone">Phone Number</label><input class="shadow" type="text" name="user_phone" id="phone" placeholder="Optional">
+                    <label for="address">Street Address</label><input class="shadow" type="text" name="user_address" id="address">
+                    <label for="city">City</label><input class="shadow" type="text" name="user_city" id="city">
                     <label for="state">State</label>
-                    <select name="state" id="state">
+                    <select class="shadow" name="state" id="state">
                         <option value=" ">-- Choose State --</option>
                         <option value="AL">Alabama</option>
                         <option value="AK">Alaska</option>
@@ -88,34 +88,36 @@
                         <option value="WY">Wyoming</option>
                     </select>
 
-                    <label for="zip">Zip Code</label><input type="text" name="user_zip" id="zip">
+                    <label for="zip">Zip Code</label><input class="shadow" type="text" name="user_zip" id="zip">
 
                 </div>
 
             </fieldset>
 
             <fieldset>
-                <h2>Newsletter</h2>
+                <legend>
+                    <h2>Newsletter</h2>
+                </legend>
                 <div class="newsletter-wrapper">
                     <div class="checkboxes">
                         <label>Select the newsletters you'd like to receive!</label>
-                        <label for="html"><input type="checkbox" value="html" name="news" id="html">HTML News</label>
-                        <label for="css"><input type="checkbox" value="css" name="news" id="css">CSS News</label>
-                        <label for="js"><input type="checkbox" value="js" name="news" id="js">Javascript News</label>
+                        <label for="html"><input class="shadow" type="checkbox" value="html" name="news" id="html">HTML News</label>
+                        <label for="css"><input class="shadow" type="checkbox" value="css" name="news" id="css">CSS News</label>
+                        <label for="js"><input class="shadow" type="checkbox" value="js" name="news" id="js">Javascript News</label>
                     </div>
                     
                     <div class="radios">
                         <label>Newsletter format</label>
-                        <label for="html_format"><input type="radio" value="html" name="format" id="html_format">HTML</label>
-                        <label for="plain"><input type="radio" value="plain" name="format" id="plain">Plain Text</label>
+                        <label for="html_format"><input class="shadow" type="radio" value="html" name="format" id="html_format">HTML</label>
+                        <label for="plain"><input class="shadow" type="radio" value="plain" name="format" id="plain">Plain Text</label>
                     </div>
 
-                    <label class="textarea-label">Other topics you'd like to hear about</label>
-                    <textarea name="topics" cols="18" rows="8"></textarea>
+                    <label for="topics" class="textarea-label">Other topics you'd like to hear about</label>
+                    <textarea class="shadow" id="topics" name="topics" cols="18" rows="8"></textarea>
             
                 </div>
             </fieldset>
-            
+
             <button class="submit">Sign Up</button>
         
         </form>

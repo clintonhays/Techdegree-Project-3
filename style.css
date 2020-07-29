@@ -48,6 +48,12 @@ form {
 	border-top: 2px solid rgb(70, 70, 70);
 }
 
+/* Apply Box Shadow to Inputs, Selects, Checkboxes, Radios, Textarea */
+
+.shadow {
+	box-shadow: inset 3px 3px 10px #bdbcbc, -5px -5px 12px #eeeeee;
+}
+
 /* Contact Information Styling */
 
 .contact-wrapper {
@@ -75,8 +81,18 @@ form h2 {
 	background-color: #ddd;
 	border: none;
 	border-radius: 5px;
+	width: 96%;
+	outline: none;
+	transition: background-color .6s;
+}
+
+.contact-wrapper select {
 	width: 100%;
-	box-shadow: inset 3px 3px 10px #bdbcbc, -5px -5px 12px #eeeeee;
+}
+
+.contact-wrapper input:focus,
+.contact-wrapper select:focus {
+	background-color: rgb(240, 240, 240);
 }
 
 ::placeholder {
@@ -115,9 +131,8 @@ input[type="text"]:last-child {
 .checkboxes input[type="checkbox"],
 input[type="radio"] {
 	border: #ddd;
-	/* outline: none;    */
 	margin-right: 10px;
-	box-shadow: inset 3px 3px 10px #bdbcbc, -5px -5px 12px #eeeeee;
+	transition: background-color .6s;
 }
 
 .textarea-label {
@@ -133,9 +148,13 @@ textarea {
 	resize: none;
 	margin-bottom: 25px;
 	padding: 1em;
-	width: 90%%;
+	width: 90%;
 	background: #ddd;
-	box-shadow: inset 3px 3px 10px #bdbcbc, -5px -5px 12px #eeeeee;
+	transition: background-color .6s;
+}
+
+textarea:focus {
+	background-color: rgb(240, 240, 240);
 }
 
 /* Button Styling */
@@ -195,5 +214,9 @@ footer p {
 		padding-left: 1em;
 		width: 78.5%;
 		margin-top: 25px;
+	}
+
+	textarea {
+		width: 95%;
 	}
 }
